@@ -1,10 +1,9 @@
 site_name: Go Opik SDK
 site_description: Go SDK for Opik - Open-source LLM observability platform by Comet ML
-site_url: https://agentplexus.github.io/go-opik/
-repo_url: https://github.com/agentplexus/go-opik
-repo_name: agentplexus/go-opik
+site_url: https://plexusone.github.io/opik-go/
+repo_url: https://github.com/plexusone/opik-go
+repo_name: plexusone/opik-go
 
-docs_dir: docsrc
 theme: readthedocs
 
 markdown_extensions:
