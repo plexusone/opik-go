@@ -732,7 +732,7 @@ MIT License - see [LICENSE](LICENSE) for details.
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/opik-go
  [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/opik-go
  [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
- [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fcoreforge
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fopik-go
  [loc-svg]: https://tokei.rs/b1/github/plexusone/opik-go
  [repo-url]: https://github.com/plexusone/opik-go
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
