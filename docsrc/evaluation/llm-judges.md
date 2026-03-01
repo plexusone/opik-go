@@ -4,8 +4,8 @@ Use an LLM to evaluate outputs that can't be measured with simple rules.
 
 ```go
 import (
-    "github.com/agentplexus/go-opik/evaluation/llm"
-    "github.com/agentplexus/go-opik/integrations/openai"
+    "github.com/plexusone/opik-go/evaluation/llm"
+    "github.com/plexusone/opik-go/integrations/openai"
 )
 ```
 

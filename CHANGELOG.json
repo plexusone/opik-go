@@ -1,10 +1,25 @@
 {
-  "ir_version": "1.0",
-  "project": "go-opik",
-  "repository": "https://github.com/agentplexus/go-opik",
+  "$schema": "https://github.com/grokify/structured-changelog/raw/v0.7/schema/changelog.schema.json",
+  "irVersion": "1.0",
+  "project": "opik-go",
+  "repository": "https://github.com/plexusone/opik-go",
   "versioning": "semver",
-  "commit_convention": "conventional",
+  "commitConvention": "conventional",
   "releases": [
+    {
+      "version": "v0.6.0",
+      "date": "2026-03-01",
+      "highlights": [
+        { "description": "Organization rename from agentplexus to plexusone and repo rename from go-opik to opik-go" }
+      ],
+      "changed": [
+        { "description": "**Breaking**: Module path changed from `github.com/agentplexus/go-opik` to `github.com/plexusone/opik-go`" }
+      ],
+      "dependencies": [
+        { "description": "Upgraded `github.com/plexusone/omnillm` from v0.12.0 to v0.13.0" },
+        { "description": "Upgraded `github.com/plexusone/omniobserve` from v0.5.1 to v0.7.0" }
+      ]
+    },
     {
       "version": "v0.5.1",
       "date": "2026-01-17",
@@ -24,7 +39,7 @@
       "date": "2026-01-03",
       "highlights": [
         { "description": "Built-in OmniObserve `llmops` provider for unified LLM observability" },
-        { "description": "Module renamed to `github.com/agentplexus/go-opik` (breaking change)" }
+        { "description": "Module renamed to `github.com/plexusone/opik-go` (breaking change)" }
       ],
       "added": [
         { "description": "Built-in OmniObserve `llmops` provider adapter", "commit": "2ae9fdb" },
@@ -38,7 +53,7 @@
       ],
       "changed": [
         {
-          "description": "Module renamed from `github.com/agentplexus/go-comet-ml-opik` to `github.com/agentplexus/go-opik`",
+          "description": "Module renamed from `github.com/agentplexus/go-comet-ml-opik` to `github.com/plexusone/opik-go`",
           "breaking": true,
           "commit": "2815f74"
         },

@@ -14,7 +14,7 @@ Go SDK for [Opik](https://github.com/comet-ml/opik) - an open-source LLM observa
 ## Installation
 
 ```bash
-go get github.com/agentplexus/go-opik
+go get github.com/plexusone/opik-go
 ```
 
 ## Quick Start
@@ -26,7 +26,7 @@ import (
     "context"
     "log"
 
-    "github.com/agentplexus/go-opik"
+    "github.com/plexusone/opik-go"
 )
 
 func main() {
@@ -63,7 +63,7 @@ func main() {
 
 ## OmniObserve Integration
 
-The SDK includes a built-in `llmops` subpackage that implements the [OmniObserve](https://github.com/agentplexus/omniobserve) `llmops.Provider` interface. This allows you to use Opik through a unified observability abstraction alongside other providers like Phoenix, Langfuse, etc.
+The SDK includes a built-in `llmops` subpackage that implements the [OmniObserve](https://github.com/plexusone/omniobserve) `llmops.Provider` interface. This allows you to use Opik through a unified observability abstraction alongside other providers like Phoenix, Langfuse, etc.
 
 ```go
 package main
@@ -71,8 +71,8 @@ package main
 import (
     "context"
 
-    "github.com/agentplexus/omniobserve/llmops"
-    _ "github.com/agentplexus/go-opik/llmops" // Register Opik provider
+    "github.com/plexusone/omniobserve/llmops"
+    _ "github.com/plexusone/opik-go/llmops" // Register Opik provider
 )
 
 func main() {
@@ -427,7 +427,7 @@ prompts, _ := client.ListPrompts(ctx, 1, 100)
 ### HTTP Middleware
 
 ```go
-import "github.com/agentplexus/go-opik/middleware"
+import "github.com/plexusone/opik-go/middleware"
 
 // Wrap HTTP handlers with automatic tracing
 handler := middleware.TracingMiddleware(client, "api-request")(yourHandler)
@@ -496,8 +496,8 @@ dataURL := attachment.ToDataURL()
 
 ```go
 import (
-    "github.com/agentplexus/go-opik/evaluation"
-    "github.com/agentplexus/go-opik/evaluation/heuristic"
+    "github.com/plexusone/opik-go/evaluation"
+    "github.com/plexusone/opik-go/evaluation/heuristic"
 )
 
 // Create metrics
@@ -524,8 +524,8 @@ fmt.Printf("Average score: %.2f\n", result.AverageScore())
 
 ```go
 import (
-    "github.com/agentplexus/go-opik/evaluation/llm"
-    "github.com/agentplexus/go-opik/integrations/openai"
+    "github.com/plexusone/opik-go/evaluation/llm"
+    "github.com/plexusone/opik-go/integrations/openai"
 )
 
 // Create LLM provider
@@ -569,7 +569,7 @@ score := geval.Score(ctx, input)
 ### OpenAI
 
 ```go
-import "github.com/agentplexus/go-opik/integrations/openai"
+import "github.com/plexusone/opik-go/integrations/openai"
 
 // Create provider for evaluation
 provider := openai.NewProvider(
@@ -589,7 +589,7 @@ httpClient := openai.TracingHTTPClient(opikClient)
 ### Anthropic
 
 ```go
-import "github.com/agentplexus/go-opik/integrations/anthropic"
+import "github.com/plexusone/opik-go/integrations/anthropic"
 
 // Create provider for evaluation
 provider := anthropic.NewProvider(
@@ -608,7 +608,7 @@ httpClient := anthropic.TracingHTTPClient(opikClient)
 
 ```bash
 # Install CLI
-go install github.com/agentplexus/go-opik/cmd/opik@latest
+go install github.com/plexusone/opik-go/cmd/opik@latest
 
 # Configure
 opik configure -api-key=your-key -workspace=your-workspace
@@ -720,19 +720,19 @@ MIT License - see [LICENSE](LICENSE) for details.
 - [Opik Python SDK](https://github.com/comet-ml/opik/tree/main/sdks/python) - Official Python SDK
 - [Opik Documentation](https://www.comet.com/docs/opik/) - Official documentation
 
- [build-status-svg]: https://github.com/agentplexus/go-opik/actions/workflows/ci.yaml/badge.svg?branch=main
- [build-status-url]: https://github.com/agentplexus/go-opik/actions/workflows/ci.yaml
- [lint-status-svg]: https://github.com/agentplexus/go-opik/actions/workflows/lint.yaml/badge.svg?branch=main
- [lint-status-url]: https://github.com/agentplexus/go-opik/actions/workflows/lint.yaml
- [goreport-svg]: https://goreportcard.com/badge/github.com/agentplexus/go-opik
- [goreport-url]: https://goreportcard.com/report/github.com/agentplexus/go-opik
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/agentplexus/go-opik
- [docs-godoc-url]: https://pkg.go.dev/github.com/agentplexus/go-opik
+ [build-status-svg]: https://github.com/plexusone/opik-go/actions/workflows/ci.yaml/badge.svg?branch=main
+ [build-status-url]: https://github.com/plexusone/opik-go/actions/workflows/ci.yaml
+ [lint-status-svg]: https://github.com/plexusone/opik-go/actions/workflows/lint.yaml/badge.svg?branch=main
+ [lint-status-url]: https://github.com/plexusone/opik-go/actions/workflows/lint.yaml
+ [goreport-svg]: https://goreportcard.com/badge/github.com/plexusone/opik-go
+ [goreport-url]: https://goreportcard.com/report/github.com/plexusone/opik-go
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/opik-go
+ [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/opik-go
  [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
  [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fgo-opik
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/agentplexus/go-opik/blob/master/LICENSE
- [used-by-svg]: https://sourcegraph.com/github.com/agentplexus/go-opik/-/badge.svg
- [used-by-url]: https://sourcegraph.com/github.com/agentplexus/go-opik?badge
+ [license-url]: https://github.com/plexusone/opik-go/blob/master/LICENSE
+ [used-by-svg]: https://sourcegraph.com/github.com/plexusone/opik-go/-/badge.svg
+ [used-by-url]: https://sourcegraph.com/github.com/plexusone/opik-go?badge
  [version-svg]: https://img.shields.io/github/v/release/agentplexus/go-opik
- [version-url]: https://github.com/agentplexus/go-opik/releases
+ [version-url]: https://github.com/plexusone/opik-go/releases

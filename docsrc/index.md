@@ -23,7 +23,7 @@ import (
     "context"
     "log"
 
-    opik "github.com/agentplexus/go-opik"
+    opik "github.com/plexusone/opik-go"
 )
 
 func main() {
@@ -61,7 +61,7 @@ func main() {
 ## Installation
 
 ```bash
-go get github.com/agentplexus/go-opik
+go get github.com/plexusone/opik-go
 ```
 
 ## Next Steps

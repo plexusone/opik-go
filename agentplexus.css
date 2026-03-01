@@ -1,0 +1,336 @@
+/* @theme vibeminds */
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* AgentPlexus Color Palette:
+   - Background Dark: #0a0e1a
+   - Cyan (primary): #00d4ff
+   - Pink/Magenta (secondary): #e040fb
+   - Lavender: #b388ff
+   - Deep Blue: #1a237e
+   - Purple: #311b92
+*/
+
+section {
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a237e 50%, #0a0e1a 100%);
+  color: #e8eaf6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 24px;
+  padding: 40px 60px;
+  padding-top: 35px;
+}
+
+section * {
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+/* Definition lists - remove horizontal lines */
+section dt, section dd {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+section dt::after, section dd::before {
+  border: none !important;
+  content: none !important;
+}
+
+section dl {
+  border: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+section dl::before, section dl::after {
+  border: none !important;
+  content: none !important;
+}
+
+/* Target definition list elements aggressively */
+dt, dd, dl {
+  border: 0 !important;
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+  outline: none !important;
+}
+
+/* Pagination styling */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  font-size: 14px;
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+/* Headings */
+section h1 {
+  font-size: 44px !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.3em !important;
+  background: linear-gradient(135deg, #00d4ff 0%, #e040fb 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  line-height: 1.2 !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #b388ff;
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+  border: none;
+}
+
+section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #e040fb;
+  border: none;
+}
+
+/* Text elements */
+section p, section li {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #e8eaf6;
+}
+
+section strong {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+section em {
+  color: #e040fb;
+  font-style: italic;
+}
+
+section a {
+  color: #00d4ff;
+  text-decoration: none;
+  border-bottom: 2px solid #00d4ff;
+}
+
+/* Code styling */
+section code {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 20px;
+  background: rgba(0, 212, 255, 0.2);
+  color: #00d4ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  font-variant-ligatures: none;
+}
+
+section pre {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 18px;
+  background: rgba(10, 14, 26, 0.8);
+  border: 1px solid #00d4ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1em 0;
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.2);
+  font-variant-ligatures: none;
+}
+
+section pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #f5f5f5;
+}
+
+section pre code .hljs-string,
+section pre code .hljs-attr {
+  color: #e8eaf6;
+}
+
+/* Lists */
+section ul, section ol {
+  margin: 0.5em 0;
+  border: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+section li {
+  margin: 0.27em 0;
+  line-height: 1.44;
+  font-size: 20px;
+  border: none;
+}
+
+/* Tables */
+section table {
+  border-collapse: collapse;
+  margin: 1em auto;
+  background: rgba(10, 14, 26, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+section th {
+  background: linear-gradient(135deg, #00d4ff 0%, #e040fb 100%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: left;
+}
+
+section td {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  color: #e8eaf6;
+  background: rgba(10, 14, 26, 0.6);
+}
+
+section tr:last-child td {
+  border-bottom: none;
+}
+
+section tr:hover td {
+  background: rgba(0, 100, 150, 0.8);
+  color: #ffffff;
+}
+
+/* Blockquotes */
+section blockquote {
+  border-left: 4px solid #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 12px 20px;
+  margin: 1em 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Title slide styling */
+section:first-of-type h1 {
+  font-size: 64px !important;
+  text-align: center;
+  margin-top: 1em;
+}
+
+section:first-of-type h2 {
+  text-align: center;
+  font-size: 42px !important;
+  color: #b388ff;
+}
+
+section:first-of-type p {
+  text-align: center;
+  font-size: 22px;
+  color: #e040fb;
+}
+
+/* Emoji and icon styling */
+section img[alt~="emoji"], section img[alt~="icon"] {
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+/* Hide horizontal rules */
+section hr {
+  display: none;
+}
+
+/* AgentPlexus branding footer */
+section::before {
+  content: 'AgentPlexus';
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  font-size: 12px;
+  background: linear-gradient(135deg, #00d4ff 0%, #e040fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Lead/section header slides */
+section.lead {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a237e 60%, #0a0e1a 100%) !important;
+}
+
+section.lead h1 {
+  font-size: 72px !important;
+  background: linear-gradient(135deg, #00d4ff 0%, #e040fb 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+section.lead h2 {
+  font-size: 42px !important;
+  font-weight: 600 !important;
+  color: #00d4ff !important;
+}
+
+section.lead h3 {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #00d4ff !important;
+}
+
+section.lead p {
+  font-size: 24px !important;
+  color: #00d4ff !important;
+}
+
+/* Section divider slides */
+section.section-divider {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a237e 60%, #0a0e1a 100%) !important;
+}
+
+section.section-divider h1 {
+  font-size: 72px !important;
+  background: linear-gradient(135deg, #00d4ff 0%, #e040fb 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+section.section-divider h2 {
+  font-size: 42px !important;
+  font-weight: 600 !important;
+  color: #00d4ff !important;
+}
+
+section.section-divider h3 {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #00d4ff !important;
+}
+
+section.section-divider p {
+  font-size: 24px !important;
+  color: #00d4ff !important;
+}

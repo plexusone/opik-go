@@ -24,10 +24,10 @@ go test ./... -v
 
 ```bash
 # Core SDK tests (config, context)
-go test github.com/agentplexus/go-opik -v
+go test github.com/plexusone/opik-go -v
 
 # Evaluation heuristic metrics
-go test github.com/agentplexus/go-opik/evaluation/heuristic -v
+go test github.com/plexusone/opik-go/evaluation/heuristic -v
 ```
 
 ## API Key Requirements
@@ -59,8 +59,8 @@ API keys are only required for:
 Tests for configuration management and context propagation:
 
 ```bash
-go test github.com/agentplexus/go-opik -v -run TestConfig
-go test github.com/agentplexus/go-opik -v -run TestContext
+go test github.com/plexusone/opik-go -v -run TestConfig
+go test github.com/plexusone/opik-go -v -run TestContext
 ```
 
 **Config tests cover:**
@@ -87,7 +87,7 @@ go test github.com/agentplexus/go-opik -v -run TestContext
 Tests for string and similarity metrics:
 
 ```bash
-go test github.com/agentplexus/go-opik/evaluation/heuristic -v
+go test github.com/plexusone/opik-go/evaluation/heuristic -v
 ```
 
 **String metric tests (`string_test.go`):**

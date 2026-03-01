@@ -3,7 +3,7 @@
 Auto-trace OpenAI API calls and use OpenAI as an evaluation judge.
 
 ```go
-import "github.com/agentplexus/go-opik/integrations/openai"
+import "github.com/plexusone/opik-go/integrations/openai"
 ```
 
 ## Auto-Tracing

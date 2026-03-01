@@ -202,6 +202,6 @@ make docs-serve
 
 ## Getting Help
 
-- [GitHub Issues](https://github.com/agentplexus/go-opik/issues)
+- [GitHub Issues](https://github.com/plexusone/opik-go/issues)
 - [Opik Documentation](https://www.comet.com/docs/opik/)
 - [ogen Documentation](https://ogen.dev/)

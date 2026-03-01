@@ -11,7 +11,7 @@ This release includes two major changes:
 
 ### Module Renamed to go-opik
 
-The Go module has been renamed from `github.com/agentplexus/go-comet-ml-opik` to `github.com/agentplexus/go-opik`.
+The Go module has been renamed from `github.com/agentplexus/go-comet-ml-opik` to `github.com/plexusone/opik-go`.
 
 **All users must update their imports:**
 
@@ -20,19 +20,19 @@ The Go module has been renamed from `github.com/agentplexus/go-comet-ml-opik` to
 import opik "github.com/agentplexus/go-comet-ml-opik"
 
 // After (v0.5.0+)
-import opik "github.com/agentplexus/go-opik"
+import opik "github.com/plexusone/opik-go"
 ```
 
 This affects all subpackages as well:
 
 | Before | After |
 |--------|-------|
-| `github.com/agentplexus/go-comet-ml-opik` | `github.com/agentplexus/go-opik` |
-| `github.com/agentplexus/go-comet-ml-opik/llmops` | `github.com/agentplexus/go-opik/llmops` |
-| `github.com/agentplexus/go-comet-ml-opik/middleware` | `github.com/agentplexus/go-opik/middleware` |
-| `github.com/agentplexus/go-comet-ml-opik/evaluation` | `github.com/agentplexus/go-opik/evaluation` |
-| `github.com/agentplexus/go-comet-ml-opik/integrations/openai` | `github.com/agentplexus/go-opik/integrations/openai` |
-| `github.com/agentplexus/go-comet-ml-opik/integrations/anthropic` | `github.com/agentplexus/go-opik/integrations/anthropic` |
+| `github.com/agentplexus/go-comet-ml-opik` | `github.com/plexusone/opik-go` |
+| `github.com/agentplexus/go-comet-ml-opik/llmops` | `github.com/plexusone/opik-go/llmops` |
+| `github.com/agentplexus/go-comet-ml-opik/middleware` | `github.com/plexusone/opik-go/middleware` |
+| `github.com/agentplexus/go-comet-ml-opik/evaluation` | `github.com/plexusone/opik-go/evaluation` |
+| `github.com/agentplexus/go-comet-ml-opik/integrations/openai` | `github.com/plexusone/opik-go/integrations/openai` |
+| `github.com/agentplexus/go-comet-ml-opik/integrations/anthropic` | `github.com/plexusone/opik-go/integrations/anthropic` |
 
 ## New Features
 
@@ -42,8 +42,8 @@ The SDK now includes a `llmops/` subpackage that registers as an OmniObserve pro
 
 ```go
 import (
-    "github.com/agentplexus/omniobserve/llmops"
-    _ "github.com/agentplexus/go-opik/llmops" // Register Opik provider
+    "github.com/plexusone/omniobserve/llmops"
+    _ "github.com/plexusone/opik-go/llmops" // Register Opik provider
 )
 
 // Open the Opik provider through OmniObserve
@@ -107,7 +107,7 @@ The adapter code now lives in the go-opik repository itself. This pattern:
 
 Added new dependency:
 
-- `github.com/agentplexus/omniobserve v0.5.0` - For llmops interfaces
+- `github.com/plexusone/omniobserve v0.5.0` - For llmops interfaces
 
 ## New in v0.5.0
 
@@ -126,10 +126,10 @@ Update all imports from `go-comet-ml-opik` to `go-opik`:
 
 ```bash
 # Using sed (macOS)
-find . -name "*.go" -exec sed -i '' 's|github.com/agentplexus/go-comet-ml-opik|github.com/agentplexus/go-opik|g' {} \;
+find . -name "*.go" -exec sed -i '' 's|github.com/agentplexus/go-comet-ml-opik|github.com/plexusone/opik-go|g' {} \;
 
 # Using sed (Linux)
-find . -name "*.go" -exec sed -i 's|github.com/agentplexus/go-comet-ml-opik|github.com/agentplexus/go-opik|g' {} \;
+find . -name "*.go" -exec sed -i 's|github.com/agentplexus/go-comet-ml-opik|github.com/plexusone/opik-go|g' {} \;
 ```
 
 Then run:
@@ -143,12 +143,12 @@ If you were using the external adapter in omniobserve, switch to the built-in ad
 
 **Before (v0.4.x):**
 ```go
-import _ "github.com/agentplexus/omniobserve/llmops/opik"
+import _ "github.com/plexusone/omniobserve/llmops/opik"
 ```
 
 **After (v0.5.0+):**
 ```go
-import _ "github.com/agentplexus/go-opik/llmops"
+import _ "github.com/plexusone/opik-go/llmops"
 ```
 
 The API remains identical - only the import path changes.

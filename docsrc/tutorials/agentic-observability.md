@@ -89,7 +89,7 @@ Wrap your ADK agent's LLM calls with Opik traces:
 
 ```go
 import (
-    opik "github.com/agentplexus/go-opik"
+    opik "github.com/plexusone/opik-go"
 )
 
 type TracedSynthesisAgent struct {
@@ -466,7 +466,7 @@ import (
     "context"
     "log"
 
-    opik "github.com/agentplexus/go-opik"
+    opik "github.com/plexusone/opik-go"
 )
 
 func main() {

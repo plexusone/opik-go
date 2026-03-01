@@ -3,7 +3,7 @@
 Rule-based metrics that don't require an LLM. Fast, deterministic, and free.
 
 ```go
-import "github.com/agentplexus/go-opik/evaluation/heuristic"
+import "github.com/plexusone/opik-go/evaluation/heuristic"
 ```
 
 ## String Matching

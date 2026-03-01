@@ -3,7 +3,7 @@
 Auto-trace Anthropic API calls and use Claude as an evaluation judge.
 
 ```go
-import "github.com/agentplexus/go-opik/integrations/anthropic"
+import "github.com/plexusone/opik-go/integrations/anthropic"
 ```
 
 ## Auto-Tracing

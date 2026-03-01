@@ -81,7 +81,7 @@ mermaid.initialize({
 # Quick Start
 
 ```go
-import opik "github.com/agentplexus/go-opik"
+import opik "github.com/plexusone/opik-go"
 
 client, _ := opik.NewClient(
     opik.WithAPIKey("your-api-key"),
@@ -170,8 +170,8 @@ Use go-opik through the unified OmniObserve abstraction:
 
 ```go
 import (
-    "github.com/agentplexus/omniobserve/llmops"
-    _ "github.com/agentplexus/go-opik/llmops"  // Register provider
+    "github.com/plexusone/omniobserve/llmops"
+    _ "github.com/plexusone/opik-go/llmops"  // Register provider
 )
 
 // Open via OmniObserve
@@ -234,7 +234,7 @@ Switch between Opik, Langfuse, and Phoenix without code changes.
 Automatic tracing for HTTP handlers:
 
 ```go
-import "github.com/agentplexus/go-opik/middleware"
+import "github.com/plexusone/opik-go/middleware"
 
 // Wrap your handler
 handler := middleware.Trace(client, myHandler,
@@ -255,7 +255,7 @@ Captures:
 # Installation
 
 ```bash
-go get github.com/agentplexus/go-opik
+go get github.com/plexusone/opik-go
 ```
 
 ### Configuration
@@ -279,9 +279,9 @@ client, _ := opik.NewClient(
 
 ### Links
 
-- **Repository**: github.com/agentplexus/go-opik
+- **Repository**: github.com/plexusone/opik-go
 - **Opik**: github.com/comet-ml/opik
-- **OmniObserve**: github.com/agentplexus/omniobserve
+- **OmniObserve**: github.com/plexusone/omniobserve
 - **Documentation**: agentplexus.github.io/go-opik
 
 ### License
@@ -297,7 +297,7 @@ MIT License - Open source and free to use
 **Full-featured Go SDK for Opik LLM Observability**
 
 ```bash
-go get github.com/agentplexus/go-opik
+go get github.com/plexusone/opik-go
 ```
 
 - Traces, spans, feedback scores

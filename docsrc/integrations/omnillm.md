@@ -1,11 +1,11 @@
 # omnillm Integration
 
-Integrate with [omnillm](https://github.com/agentplexus/omnillm), a unified LLM wrapper library that supports multiple providers (OpenAI, Anthropic, Bedrock, Gemini, Ollama, xAI).
+Integrate with [omnillm](https://github.com/plexusone/omnillm), a unified LLM wrapper library that supports multiple providers (OpenAI, Anthropic, Bedrock, Gemini, Ollama, xAI).
 
 ```go
 import (
-    "github.com/agentplexus/omnillm"
-    opikomnillm "github.com/agentplexus/go-opik/integrations/omnillm"
+    "github.com/plexusone/omnillm"
+    opikomnillm "github.com/plexusone/opik-go/integrations/omnillm"
 )
 ```
 
@@ -27,8 +27,8 @@ Wrap individual LLM calls with spans for maximum control.
 
 ```go
 import (
-    opik "github.com/agentplexus/go-opik"
-    "github.com/agentplexus/omnillm"
+    opik "github.com/plexusone/opik-go"
+    "github.com/plexusone/omnillm"
 )
 
 func callLLM(ctx context.Context, client *omnillm.ChatClient, req *omnillm.ChatCompletionRequest) (*omnillm.ChatCompletionResponse, error) {
@@ -105,9 +105,9 @@ Use the built-in `TracingClient` wrapper for automatic tracing of all calls.
 
 ```go
 import (
-    opik "github.com/agentplexus/go-opik"
-    opikomnillm "github.com/agentplexus/go-opik/integrations/omnillm"
-    "github.com/agentplexus/omnillm"
+    opik "github.com/plexusone/opik-go"
+    opikomnillm "github.com/plexusone/opik-go/integrations/omnillm"
+    "github.com/plexusone/omnillm"
 )
 
 func main() {
@@ -187,9 +187,9 @@ Use omnillm as an LLM provider for evaluation judges.
 
 ```go
 import (
-    opikomnillm "github.com/agentplexus/go-opik/integrations/omnillm"
-    "github.com/agentplexus/go-opik/evaluation/llm"
-    "github.com/agentplexus/omnillm"
+    opikomnillm "github.com/plexusone/opik-go/integrations/omnillm"
+    "github.com/plexusone/opik-go/evaluation/llm"
+    "github.com/plexusone/omnillm"
 )
 
 func main() {
@@ -264,11 +264,11 @@ import (
     "context"
     "fmt"
 
-    opik "github.com/agentplexus/go-opik"
-    "github.com/agentplexus/go-opik/evaluation"
-    "github.com/agentplexus/go-opik/evaluation/llm"
-    opikomnillm "github.com/agentplexus/go-opik/integrations/omnillm"
-    "github.com/agentplexus/omnillm"
+    opik "github.com/plexusone/opik-go"
+    "github.com/plexusone/opik-go/evaluation"
+    "github.com/plexusone/opik-go/evaluation/llm"
+    opikomnillm "github.com/plexusone/opik-go/integrations/omnillm"
+    "github.com/plexusone/omnillm"
 )
 
 func main() {

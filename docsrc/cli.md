@@ -5,7 +5,7 @@ The Opik CLI provides command-line access to manage projects, traces, datasets, 
 ## Installation
 
 ```bash
-go install github.com/agentplexus/go-opik/cmd/opik@latest
+go install github.com/plexusone/opik-go/cmd/opik@latest
 ```
 
 ## Configuration
