@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 // GEval implements the G-EVAL framework for LLM evaluation.

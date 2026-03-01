@@ -13,8 +13,8 @@
 // # Basic Usage
 //
 //	import (
-//	    "github.com/agentplexus/go-opik/evaluation"
-//	    "github.com/agentplexus/go-opik/evaluation/heuristic"
+//	    "github.com/plexusone/opik-go/evaluation"
+//	    "github.com/plexusone/opik-go/evaluation/heuristic"
 //	)
 //
 //	// Create metrics

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 // BaseJudge provides common functionality for LLM-based evaluation metrics.

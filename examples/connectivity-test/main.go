@@ -19,7 +19,7 @@ import (
 	"net/http/httputil"
 	"os"
 
-	opik "github.com/agentplexus/go-opik"
+	opik "github.com/plexusone/opik-go"
 )
 
 type debugTransport struct {

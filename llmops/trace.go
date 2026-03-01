@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	opik "github.com/agentplexus/go-opik"
-	"github.com/agentplexus/omniobserve/llmops"
+	opik "github.com/plexusone/opik-go"
+	"github.com/plexusone/omniobserve/llmops"
 )
 
 // traceAdapter adapts opik.Trace to llmops.Trace.

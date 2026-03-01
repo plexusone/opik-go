@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 // Equals checks if the output exactly matches the expected value.

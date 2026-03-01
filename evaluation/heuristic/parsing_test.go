@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 func TestIsJSON(t *testing.T) {

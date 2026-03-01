@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	opik "github.com/agentplexus/go-opik"
-	_ "github.com/agentplexus/go-opik/llmops"
-	"github.com/agentplexus/omniobserve/llmops"
+	opik "github.com/plexusone/opik-go"
+	_ "github.com/plexusone/opik-go/llmops"
+	"github.com/plexusone/omniobserve/llmops"
 )
 
 // testConfig holds configuration for integration tests.

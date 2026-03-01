@@ -11,8 +11,8 @@ import (
 
 	"github.com/google/uuid"
 
-	opik "github.com/agentplexus/go-opik"
-	"github.com/agentplexus/go-opik/internal/api"
+	opik "github.com/plexusone/opik-go"
+	"github.com/plexusone/opik-go/internal/api"
 )
 
 func main() {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 // LevenshteinSimilarity calculates similarity based on Levenshtein distance.

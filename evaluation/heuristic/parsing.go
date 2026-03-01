@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 // IsJSON checks if the output is valid JSON.

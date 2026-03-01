@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 func TestRegexMatch(t *testing.T) {

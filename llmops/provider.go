@@ -2,7 +2,7 @@
 //
 // Import this package to register the Opik provider:
 //
-//	import _ "github.com/agentplexus/go-opik/llmops"
+//	import _ "github.com/plexusone/opik-go/llmops"
 //
 // Then open it:
 //
@@ -10,7 +10,7 @@
 //
 // The standalone go-opik SDK can still be used directly without this package:
 //
-//	import opik "github.com/agentplexus/go-opik"
+//	import opik "github.com/plexusone/opik-go"
 //	client, err := opik.NewClient(opik.WithAPIKey("..."))
 package llmops
 
@@ -18,8 +18,8 @@ import (
 	"context"
 	"time"
 
-	opik "github.com/agentplexus/go-opik"
-	"github.com/agentplexus/omniobserve/llmops"
+	opik "github.com/plexusone/opik-go"
+	"github.com/plexusone/omniobserve/llmops"
 )
 
 // ProviderName is the name used to register and open this provider.

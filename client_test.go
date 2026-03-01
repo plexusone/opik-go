@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/agentplexus/go-opik/testutil"
+	"github.com/plexusone/opik-go/testutil"
 )
 
 func TestNewClient(t *testing.T) {

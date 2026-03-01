@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/agentplexus/go-opik/evaluation"
+	"github.com/plexusone/opik-go/evaluation"
 )
 
 const tolerance = 0.001

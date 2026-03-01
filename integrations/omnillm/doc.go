@@ -13,9 +13,9 @@
 // Wrap your omnillm.ChatClient to automatically trace all LLM calls:
 //
 //	import (
-//	    "github.com/agentplexus/omnillm"
-//	    opik "github.com/agentplexus/go-opik"
-//	    opikomnillm "github.com/agentplexus/go-opik/integrations/omnillm"
+//	    "github.com/plexusone/omnillm"
+//	    opik "github.com/plexusone/opik-go"
+//	    opikomnillm "github.com/plexusone/opik-go/integrations/omnillm"
 //	)
 //
 //	// Create omnillm client
@@ -45,9 +45,9 @@
 // Use omnillm as a provider for LLM-based evaluation metrics:
 //
 //	import (
-//	    "github.com/agentplexus/omnillm"
-//	    opikomnillm "github.com/agentplexus/go-opik/integrations/omnillm"
-//	    "github.com/agentplexus/go-opik/evaluation/llm"
+//	    "github.com/plexusone/omnillm"
+//	    opikomnillm "github.com/plexusone/opik-go/integrations/omnillm"
+//	    "github.com/plexusone/opik-go/evaluation/llm"
 //	)
 //
 //	// Create omnillm client

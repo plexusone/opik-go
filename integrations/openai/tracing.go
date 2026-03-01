@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	opik "github.com/agentplexus/go-opik"
+	opik "github.com/plexusone/opik-go"
 )
 
 // TracingTransport wraps an http.RoundTripper to automatically trace OpenAI API calls.

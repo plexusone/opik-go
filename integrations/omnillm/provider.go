@@ -3,10 +3,10 @@ package omnillm
 import (
 	"context"
 
-	"github.com/agentplexus/omnillm"
-	"github.com/agentplexus/omnillm/provider"
+	"github.com/plexusone/omnillm"
+	"github.com/plexusone/omnillm/provider"
 
-	"github.com/agentplexus/go-opik/evaluation/llm"
+	"github.com/plexusone/opik-go/evaluation/llm"
 )
 
 // Provider implements llm.Provider using an omnillm.ChatClient.

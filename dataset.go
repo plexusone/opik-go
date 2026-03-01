@@ -8,7 +8,7 @@ import (
 	"github.com/go-faster/jx"
 	"github.com/google/uuid"
 
-	"github.com/agentplexus/go-opik/internal/api"
+	"github.com/plexusone/opik-go/internal/api"
 )
 
 // Dataset represents a dataset in Opik for storing test data.

@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/agentplexus/omnillm"
-	"github.com/agentplexus/omnillm/provider"
+	"github.com/plexusone/omnillm"
+	"github.com/plexusone/omnillm/provider"
 
-	opik "github.com/agentplexus/go-opik"
+	opik "github.com/plexusone/opik-go"
 )
 
 // TracingClient wraps an omnillm.ChatClient with automatic Opik tracing.

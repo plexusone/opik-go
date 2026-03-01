@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	opik "github.com/agentplexus/go-opik"
+	opik "github.com/plexusone/opik-go"
 )
 
 // TracingMiddleware wraps an http.Handler to automatically create spans for incoming requests.

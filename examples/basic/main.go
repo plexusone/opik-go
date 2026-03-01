@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	opik "github.com/agentplexus/go-opik"
+	opik "github.com/plexusone/opik-go"
 )
 
 func main() {
