@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://plexusone.github.io/opik-go/releases/v0.4.0/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>v0.4.0 - Go Opik SDK</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "v0.4.0";
+        var mkdocs_page_input_path = "releases/v0.4.0.md";
+        var mkdocs_page_url = "/opik-go/releases/v0.4.0/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Go Opik SDK
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/development/">Development</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Core Concepts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../core-concepts/traces-and-spans/">Traces and Spans</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../core-concepts/context-propagation/">Context Propagation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../core-concepts/feedback-scores/">Feedback Scores</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Features</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/datasets/">Datasets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/experiments/">Experiments</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/prompts/">Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/streaming/">Streaming</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/batching/">Batching</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evaluation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluation/overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluation/heuristic-metrics/">Heuristic Metrics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluation/llm-judges/">LLM Judges</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integrations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/openai/">OpenAI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/anthropic/">Anthropic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/omnillm/">omnillm</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/http-middleware/">HTTP Middleware</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/agentic-observability/">Agentic Observability</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Releases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../v0.6.0/">v0.6.0</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../v0.5.0/">v0.5.0</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">v0.4.0</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bug-fixes">Bug Fixes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#spans-now-correctly-associated-with-project">Spans Now Correctly Associated with Project</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fixed-malformed-json-in-batch-update-requests">Fixed Malformed JSON in Batch Update Requests</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#new-features">New Features</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#listspans-convenience-method">ListSpans() Convenience Method</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#debug-tools">Debug Tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#files-changed">Files Changed</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#upgrade-notes">Upgrade Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../cli/">CLI Reference</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../api-reference/">API Reference</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../presentation.html">Presentation</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Go Opik SDK</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Releases</li>
+      <li class="breadcrumb-item active">v0.4.0</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/plexusone/opik-go/edit/master/docs/releases/v0.4.0.md">Edit on plexusone/opik-go</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="release-notes-v040">Release Notes v0.4.0<a class="headerlink" href="#release-notes-v040" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This release includes critical bug fixes for span/trace project association and JSON encoding, plus a new <code>ListSpans()</code> convenience method.</p>
+<h2 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h2>
+<h3 id="spans-now-correctly-associated-with-project">Spans Now Correctly Associated with Project<a class="headerlink" href="#spans-now-correctly-associated-with-project" title="Permanent link">&para;</a></h3>
+<p><strong>Critical Fix</strong>: Spans were being created in "Default Project" instead of the configured project because <code>ProjectName</code> was not being set in the span creation request.</p>
+<ul>
+<li>Added <code>ProjectName</code> field to <code>SpanWrite</code> in span creation</li>
+<li>Spans now properly inherit the project from the client configuration</li>
+<li>Fixes issue where spans would not appear when querying by project name</li>
+</ul>
+<h3 id="fixed-malformed-json-in-batch-update-requests">Fixed Malformed JSON in Batch Update Requests<a class="headerlink" href="#fixed-malformed-json-in-batch-update-requests" title="Permanent link">&para;</a></h3>
+<p><strong>Critical Fix</strong>: Batch update requests (PATCH) for traces and spans were returning HTTP 400 due to malformed JSON.</p>
+<ul>
+<li><strong>Root cause</strong>: The ogen-generated <code>JsonListString.Encode()</code> method writes nothing when the byte slice is empty, but the field name is still written, creating invalid JSON like <code>{"input":"output":{"result":"test"}}</code></li>
+<li><strong>Fix</strong>: All <code>JsonListString</code> fields (Input, Output, Metadata) now use <code>[]byte("null")</code> instead of empty byte slices when no value is set</li>
+<li>Affects: <code>Trace.End()</code>, <code>Trace.Update()</code>, <code>Span.End()</code>, <code>Span.Update()</code></li>
+</ul>
+<h2 id="new-features">New Features<a class="headerlink" href="#new-features" title="Permanent link">&para;</a></h2>
+<h3 id="listspans-convenience-method">ListSpans() Convenience Method<a class="headerlink" href="#listspans-convenience-method" title="Permanent link">&para;</a></h3>
+<p>Added high-level SDK method for listing spans by trace ID:</p>
+<pre><code class="language-go">// SpanInfo represents basic span information
+type SpanInfo struct {
+    ID           string
+    TraceID      string
+    ParentSpanID string
+    Name         string
+    Type         string
+    StartTime    time.Time
+    EndTime      time.Time
+    Model        string
+    Provider     string
+}
+
+// List spans for a specific trace
+spans, err := client.ListSpans(ctx, traceID, page, size)
+</code></pre>
+<h2 id="debug-tools">Debug Tools<a class="headerlink" href="#debug-tools" title="Permanent link">&para;</a></h2>
+<p>Added <code>examples/debug-test/</code> directory with diagnostic tools:</p>
+<ul>
+<li><code>main.go</code> - Lists traces and spans</li>
+<li><code>get_trace.go</code> - Gets detailed trace info via API</li>
+<li><code>test_full_flow.go</code> - Full create/end test with HTTP debug output</li>
+<li><code>test_span_creation.go</code> - Tests span creation via SDK</li>
+<li><code>test_json_encode.go</code> - Tests JSON encoding of API types</li>
+<li><code>check_spans.go</code> - Comprehensive trace+span inspector using SDK methods</li>
+</ul>
+<h2 id="files-changed">Files Changed<a class="headerlink" href="#files-changed" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>span.go</code> - Added ProjectName to span creation, fixed JsonListString encoding</li>
+<li><code>trace.go</code> - Fixed JsonListString encoding in End() and Update() methods</li>
+<li><code>client.go</code> - Added SpanInfo struct and ListSpans() method</li>
+<li><code>examples/debug-test/</code> - New diagnostic tools</li>
+</ul>
+<h2 id="upgrade-notes">Upgrade Notes<a class="headerlink" href="#upgrade-notes" title="Permanent link">&para;</a></h2>
+<p>This is a bug-fix release with no breaking API changes. Upgrade recommended for all users experiencing:</p>
+<ul>
+<li>Spans not appearing in their project</li>
+<li>HTTP 400 errors when ending traces or spans</li>
+<li>Need for listing spans by trace ID</li>
+</ul>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>All changes have been verified against Comet Opik Cloud:</p>
+<ul>
+<li>Traces and spans now appear correctly in the configured project</li>
+<li>Batch update requests return HTTP 204 (success)</li>
+<li>ListSpans() correctly returns spans for a given trace</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../v0.5.0/" class="btn btn-neutral float-left" title="v0.5.0"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../cli/" class="btn btn-neutral float-right" title="CLI Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/plexusone/opik-go" class="fa fa-code-fork" style="color: #fcfcfc"> plexusone/opik-go</a>
+        </span>
+    
+    
+      <span><a href="../v0.5.0/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../cli/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

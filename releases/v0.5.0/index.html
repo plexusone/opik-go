@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://plexusone.github.io/opik-go/releases/v0.5.0/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>v0.5.0 - Go Opik SDK</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "v0.5.0";
+        var mkdocs_page_input_path = "releases/v0.5.0.md";
+        var mkdocs_page_url = "/opik-go/releases/v0.5.0/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Go Opik SDK
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/development/">Development</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Core Concepts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../core-concepts/traces-and-spans/">Traces and Spans</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../core-concepts/context-propagation/">Context Propagation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../core-concepts/feedback-scores/">Feedback Scores</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Features</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/datasets/">Datasets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/experiments/">Experiments</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/prompts/">Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/streaming/">Streaming</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../features/batching/">Batching</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evaluation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluation/overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluation/heuristic-metrics/">Heuristic Metrics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../evaluation/llm-judges/">LLM Judges</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integrations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/openai/">OpenAI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/anthropic/">Anthropic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/omnillm/">omnillm</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/http-middleware/">HTTP Middleware</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tutorials/agentic-observability/">Agentic Observability</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Releases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../v0.6.0/">v0.6.0</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">v0.5.0</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#breaking-changes">Breaking Changes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#module-renamed-to-go-opik">Module Renamed to go-opik</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#new-features">New Features</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#built-in-omniobserve-llmops-provider">Built-in OmniObserve llmops Provider</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#provider-capabilities">Provider Capabilities</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implemented-interfaces">Implemented Interfaces</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#architectural-change">Architectural Change</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#previous-pattern-v04x-and-earlier">Previous Pattern (v0.4.x and earlier)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#new-pattern-v050">New Pattern (v0.5.0+)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#files-added">Files Added</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#new-in-v050">New in v0.5.0</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#migration-guide">Migration Guide</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#for-all-users-module-rename">For All Users (Module Rename)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-omniobserve-users">For OmniObserve Users</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../v0.4.0/">v0.4.0</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../cli/">CLI Reference</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../api-reference/">API Reference</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../presentation.html">Presentation</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Go Opik SDK</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Releases</li>
+      <li class="breadcrumb-item active">v0.5.0</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/plexusone/opik-go/edit/master/docs/releases/v0.5.0.md">Edit on plexusone/opik-go</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="release-notes-v050">Release Notes v0.5.0<a class="headerlink" href="#release-notes-v050" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This release includes two major changes:</p>
+<ol>
+<li><strong>Module Rename</strong>: The module has been renamed from <code>go-comet-ml-opik</code> to <code>go-opik</code> for a cleaner, shorter import path</li>
+<li><strong>Built-in OmniObserve Provider</strong>: The SDK now includes a <code>llmops</code> subpackage that implements the OmniObserve <code>llmops.Provider</code> interface</li>
+</ol>
+<h2 id="breaking-changes">Breaking Changes<a class="headerlink" href="#breaking-changes" title="Permanent link">&para;</a></h2>
+<h3 id="module-renamed-to-go-opik">Module Renamed to go-opik<a class="headerlink" href="#module-renamed-to-go-opik" title="Permanent link">&para;</a></h3>
+<p>The Go module has been renamed from <code>github.com/agentplexus/go-comet-ml-opik</code> to <code>github.com/plexusone/opik-go</code>.</p>
+<p><strong>All users must update their imports:</strong></p>
+<pre><code class="language-go">// Before (v0.4.x)
+import opik &quot;github.com/agentplexus/go-comet-ml-opik&quot;
+
+// After (v0.5.0+)
+import opik &quot;github.com/plexusone/opik-go&quot;
+</code></pre>
+<p>This affects all subpackages as well:</p>
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>github.com/agentplexus/go-comet-ml-opik</code></td>
+<td><code>github.com/plexusone/opik-go</code></td>
+</tr>
+<tr>
+<td><code>github.com/agentplexus/go-comet-ml-opik/llmops</code></td>
+<td><code>github.com/plexusone/opik-go/llmops</code></td>
+</tr>
+<tr>
+<td><code>github.com/agentplexus/go-comet-ml-opik/middleware</code></td>
+<td><code>github.com/plexusone/opik-go/middleware</code></td>
+</tr>
+<tr>
+<td><code>github.com/agentplexus/go-comet-ml-opik/evaluation</code></td>
+<td><code>github.com/plexusone/opik-go/evaluation</code></td>
+</tr>
+<tr>
+<td><code>github.com/agentplexus/go-comet-ml-opik/integrations/openai</code></td>
+<td><code>github.com/plexusone/opik-go/integrations/openai</code></td>
+</tr>
+<tr>
+<td><code>github.com/agentplexus/go-comet-ml-opik/integrations/anthropic</code></td>
+<td><code>github.com/plexusone/opik-go/integrations/anthropic</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="new-features">New Features<a class="headerlink" href="#new-features" title="Permanent link">&para;</a></h2>
+<h3 id="built-in-omniobserve-llmops-provider">Built-in OmniObserve llmops Provider<a class="headerlink" href="#built-in-omniobserve-llmops-provider" title="Permanent link">&para;</a></h3>
+<p>The SDK now includes a <code>llmops/</code> subpackage that registers as an OmniObserve provider, enabling use through a unified observability abstraction consistent with other providers like go-phoenix:</p>
+<pre><code class="language-go">import (
+    &quot;github.com/plexusone/omniobserve/llmops&quot;
+    _ &quot;github.com/plexusone/opik-go/llmops&quot; // Register Opik provider
+)
+
+// Open the Opik provider through OmniObserve
+provider, err := llmops.Open(&quot;opik&quot;,
+    llmops.WithAPIKey(&quot;your-api-key&quot;),
+    llmops.WithWorkspace(&quot;your-workspace&quot;),
+    llmops.WithProjectName(&quot;my-project&quot;),
+)
+</code></pre>
+<h3 id="provider-capabilities">Provider Capabilities<a class="headerlink" href="#provider-capabilities" title="Permanent link">&para;</a></h3>
+<p>The Opik provider registers with the following capabilities:</p>
+<ul>
+<li><code>CapabilityTracing</code> - Full trace and span support</li>
+<li><code>CapabilityEvaluation</code> - Metric evaluation</li>
+<li><code>CapabilityPrompts</code> - Prompt management</li>
+<li><code>CapabilityDatasets</code> - Dataset operations</li>
+<li><code>CapabilityExperiments</code> - Experiment tracking</li>
+<li><code>CapabilityStreaming</code> - Streaming span support</li>
+<li><code>CapabilityDistributed</code> - Distributed tracing</li>
+<li><code>CapabilityCostTracking</code> - Token usage and cost tracking</li>
+</ul>
+<h3 id="implemented-interfaces">Implemented Interfaces<a class="headerlink" href="#implemented-interfaces" title="Permanent link">&para;</a></h3>
+<p>The following OmniObserve interfaces are fully implemented:</p>
+<ul>
+<li><code>llmops.Provider</code> - Core provider interface</li>
+<li><code>llmops.Trace</code> - Trace operations (ID, Name, StartSpan, SetInput, SetOutput, SetMetadata, AddTag, AddFeedbackScore, End, Duration)</li>
+<li><code>llmops.Span</code> - Span operations (all Trace methods plus TraceID, ParentSpanID, Type, SetModel, SetProvider, SetUsage)</li>
+</ul>
+<h2 id="architectural-change">Architectural Change<a class="headerlink" href="#architectural-change" title="Permanent link">&para;</a></h2>
+<h3 id="previous-pattern-v04x-and-earlier">Previous Pattern (v0.4.x and earlier)<a class="headerlink" href="#previous-pattern-v04x-and-earlier" title="Permanent link">&para;</a></h3>
+<pre><code>omniobserve/llmops/opik/ → imports → go-opik
+</code></pre>
+<p>The adapter code lived in the OmniObserve repository, requiring updates to OmniObserve whenever the Opik SDK changed.</p>
+<h3 id="new-pattern-v050">New Pattern (v0.5.0+)<a class="headerlink" href="#new-pattern-v050" title="Permanent link">&para;</a></h3>
+<pre><code>go-opik/llmops/ → imports → omniobserve/llmops (interfaces only)
+</code></pre>
+<p>The adapter code now lives in the go-opik repository itself. This pattern:</p>
+<ul>
+<li>Makes the SDK self-contained</li>
+<li>Allows SDK and adapter to be updated together</li>
+<li>Follows the same pattern as go-phoenix</li>
+<li>Simplifies dependency management</li>
+</ul>
+<h2 id="files-added">Files Added<a class="headerlink" href="#files-added" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>llmops/provider.go</code> - Provider implementation with all llmops.Provider methods</li>
+<li><code>llmops/trace.go</code> - Trace and span adapter implementations</li>
+</ul>
+<h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
+<p>Added new dependency:</p>
+<ul>
+<li><code>github.com/plexusone/omniobserve v0.5.0</code> - For llmops interfaces</li>
+</ul>
+<h2 id="new-in-v050">New in v0.5.0<a class="headerlink" href="#new-in-v050" title="Permanent link">&para;</a></h2>
+<p>The llmops provider now implements additional interfaces from omniobserve v0.5.0:</p>
+<ul>
+<li><code>GetDatasetByID</code> - Get dataset by ID</li>
+<li><code>DeleteDataset</code> - Delete a dataset</li>
+<li><code>CreateAnnotation</code> - Stub (returns not implemented, Opik uses feedback scores)</li>
+<li><code>ListAnnotations</code> - Stub (returns not implemented, Opik uses feedback scores)</li>
+</ul>
+<h2 id="migration-guide">Migration Guide<a class="headerlink" href="#migration-guide" title="Permanent link">&para;</a></h2>
+<h3 id="for-all-users-module-rename">For All Users (Module Rename)<a class="headerlink" href="#for-all-users-module-rename" title="Permanent link">&para;</a></h3>
+<p>Update all imports from <code>go-comet-ml-opik</code> to <code>go-opik</code>:</p>
+<pre><code class="language-bash"># Using sed (macOS)
+find . -name &quot;*.go&quot; -exec sed -i '' 's|github.com/agentplexus/go-comet-ml-opik|github.com/plexusone/opik-go|g' {} \;
+
+# Using sed (Linux)
+find . -name &quot;*.go&quot; -exec sed -i 's|github.com/agentplexus/go-comet-ml-opik|github.com/plexusone/opik-go|g' {} \;
+</code></pre>
+<p>Then run:</p>
+<pre><code class="language-bash">go mod tidy
+</code></pre>
+<h3 id="for-omniobserve-users">For OmniObserve Users<a class="headerlink" href="#for-omniobserve-users" title="Permanent link">&para;</a></h3>
+<p>If you were using the external adapter in omniobserve, switch to the built-in adapter:</p>
+<p><strong>Before (v0.4.x):</strong></p>
+<pre><code class="language-go">import _ &quot;github.com/plexusone/omniobserve/llmops/opik&quot;
+</code></pre>
+<p><strong>After (v0.5.0+):</strong></p>
+<pre><code class="language-go">import _ &quot;github.com/plexusone/opik-go/llmops&quot;
+</code></pre>
+<p>The API remains identical - only the import path changes.</p>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>All existing tests pass. The new llmops package has been verified to:</p>
+<ul>
+<li>Build successfully with <code>go build ./...</code></li>
+<li>Pass linting with <code>golangci-lint run</code></li>
+<li>Register correctly with OmniObserve's provider registry</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../v0.6.0/" class="btn btn-neutral float-left" title="v0.6.0"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../v0.4.0/" class="btn btn-neutral float-right" title="v0.4.0">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/plexusone/opik-go" class="fa fa-code-fork" style="color: #fcfcfc"> plexusone/opik-go</a>
+        </span>
+    
+    
+      <span><a href="../v0.6.0/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../v0.4.0/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

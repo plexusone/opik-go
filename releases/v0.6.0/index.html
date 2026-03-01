@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://plexusone.github.io/opik-go/getting-started/configuration/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://plexusone.github.io/opik-go/releases/v0.6.0/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Configuration - Go Opik SDK</title>
+    <title>v0.6.0 - Go Opik SDK</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Configuration";
-        var mkdocs_page_input_path = "getting-started/configuration.md";
-        var mkdocs_page_url = "/opik-go/getting-started/configuration/";
+        var mkdocs_page_name = "v0.6.0";
+        var mkdocs_page_input_path = "releases/v0.6.0.md";
+        var mkdocs_page_url = "/opik-go/releases/v0.6.0/";
       </script>
     
     <!--[if lt IE 9]>
@@ -44,36 +44,14 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Getting Started</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/installation/">Installation</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configuration</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#environment-variables">Environment Variables</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#example">Example</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#config-file">Config File</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#programmatic-configuration">Programmatic Configuration</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#available-options">Available Options</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configure-via-cli">Configure via CLI</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#disable-tracing">Disable Tracing</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#load-and-check-configuration">Load and Check Configuration</a>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/configuration/">Configuration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/testing/">Testing</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../development/">Development</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/development/">Development</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Core Concepts</span></p>
@@ -124,12 +102,26 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Releases</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../releases/v0.6.0/">v0.6.0</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">v0.6.0</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#highlights">Highlights</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#breaking-changes">Breaking Changes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#module-path-changed">Module Path Changed</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#upgrade-guide">Upgrade Guide</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a>
+    </li>
+    </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../releases/v0.5.0/">v0.5.0</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../v0.5.0/">v0.5.0</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../releases/v0.4.0/">v0.4.0</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../v0.4.0/">v0.4.0</a>
                   </li>
               </ul>
               <ul>
@@ -158,10 +150,10 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Getting Started</li>
-      <li class="breadcrumb-item active">Configuration</li>
+          <li class="breadcrumb-item">Releases</li>
+      <li class="breadcrumb-item active">v0.6.0</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/plexusone/opik-go/edit/master/docs/getting-started/configuration.md">Edit on plexusone/opik-go</a>
+          <a href="https://github.com/plexusone/opik-go/edit/master/docs/releases/v0.6.0.md">Edit on plexusone/opik-go</a>
     </li>
   </ul>
   <hr/>
@@ -169,124 +161,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
-<p>The SDK supports multiple configuration methods. They are applied in this order (later overrides earlier):</p>
-<ol>
-<li>Config file (<code>~/.opik.config</code>)</li>
-<li>Environment variables</li>
-<li>Programmatic options</li>
-</ol>
-<h2 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>OPIK_URL_OVERRIDE</code></td>
-<td>API endpoint URL</td>
-</tr>
-<tr>
-<td><code>OPIK_API_KEY</code></td>
-<td>API key for Opik Cloud</td>
-</tr>
-<tr>
-<td><code>OPIK_WORKSPACE</code></td>
-<td>Workspace name for Opik Cloud</td>
-</tr>
-<tr>
-<td><code>OPIK_PROJECT_NAME</code></td>
-<td>Default project name</td>
-</tr>
-<tr>
-<td><code>OPIK_TRACK_DISABLE</code></td>
-<td>Set to <code>true</code> to disable tracing</td>
-</tr>
-</tbody>
-</table>
-<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<pre><code class="language-bash">export OPIK_API_KEY=&quot;your-api-key&quot;
-export OPIK_WORKSPACE=&quot;your-workspace&quot;
-export OPIK_PROJECT_NAME=&quot;my-project&quot;
+                <h1 id="release-notes-v060">Release Notes v0.6.0<a class="headerlink" href="#release-notes-v060" title="Permanent link">&para;</a></h1>
+<p><strong>Release Date:</strong> March 1, 2026</p>
+<h2 id="highlights">Highlights<a class="headerlink" href="#highlights" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Organization rename from agentplexus to plexusone</li>
+<li>Repository rename from go-opik to opik-go</li>
+</ul>
+<h2 id="breaking-changes">Breaking Changes<a class="headerlink" href="#breaking-changes" title="Permanent link">&para;</a></h2>
+<h3 id="module-path-changed">Module Path Changed<a class="headerlink" href="#module-path-changed" title="Permanent link">&para;</a></h3>
+<p>The Go module path has changed from <code>github.com/agentplexus/go-opik</code> to <code>github.com/plexusone/opik-go</code>.</p>
+<p><strong>Before:</strong></p>
+<pre><code class="language-go">import opik &quot;github.com/agentplexus/go-opik&quot;
+import _ &quot;github.com/agentplexus/go-opik/llmops&quot;
 </code></pre>
-<h2 id="config-file">Config File<a class="headerlink" href="#config-file" title="Permanent link">&para;</a></h2>
-<p>Create <code>~/.opik.config</code> with INI format:</p>
-<pre><code class="language-ini">[opik]
-url_override = https://www.comet.com/opik/api
-api_key = your-api-key
-workspace = your-workspace
-project_name = My Project
+<p><strong>After:</strong></p>
+<pre><code class="language-go">import opik &quot;github.com/plexusone/opik-go&quot;
+import _ &quot;github.com/plexusone/opik-go/llmops&quot;
 </code></pre>
-<h2 id="programmatic-configuration">Programmatic Configuration<a class="headerlink" href="#programmatic-configuration" title="Permanent link">&para;</a></h2>
-<p>Override any configuration using functional options:</p>
-<pre><code class="language-go">client, err := opik.NewClient(
-    opik.WithURL(&quot;https://www.comet.com/opik/api&quot;),
-    opik.WithAPIKey(&quot;your-api-key&quot;),
-    opik.WithWorkspace(&quot;your-workspace&quot;),
-    opik.WithProjectName(&quot;My Project&quot;),
-)
-</code></pre>
-<h3 id="available-options">Available Options<a class="headerlink" href="#available-options" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>WithURL(url)</code></td>
-<td>Set the API endpoint URL</td>
-</tr>
-<tr>
-<td><code>WithAPIKey(key)</code></td>
-<td>Set the API key</td>
-</tr>
-<tr>
-<td><code>WithWorkspace(name)</code></td>
-<td>Set the workspace name</td>
-</tr>
-<tr>
-<td><code>WithProjectName(name)</code></td>
-<td>Set the default project name</td>
-</tr>
-<tr>
-<td><code>WithHTTPClient(client)</code></td>
-<td>Use a custom HTTP client</td>
-</tr>
-</tbody>
-</table>
-<h2 id="configure-via-cli">Configure via CLI<a class="headerlink" href="#configure-via-cli" title="Permanent link">&para;</a></h2>
-<p>Use the CLI to save configuration:</p>
-<pre><code class="language-bash">opik configure -api-key=your-key -workspace=your-workspace
-</code></pre>
-<p>This saves to <code>~/.opik.config</code>.</p>
-<h2 id="disable-tracing">Disable Tracing<a class="headerlink" href="#disable-tracing" title="Permanent link">&para;</a></h2>
-<p>To disable tracing (useful in tests or local development):</p>
-<pre><code class="language-bash">export OPIK_TRACK_DISABLE=true
-</code></pre>
-<p>Or programmatically:</p>
-<pre><code class="language-go">client := opik.RecordTracesLocally(&quot;my-project&quot;)
-</code></pre>
-<p>This records traces in memory without sending to the server.</p>
-<h2 id="load-and-check-configuration">Load and Check Configuration<a class="headerlink" href="#load-and-check-configuration" title="Permanent link">&para;</a></h2>
-<pre><code class="language-go">// Load current configuration
-cfg := opik.LoadConfig()
+<h3 id="upgrade-guide">Upgrade Guide<a class="headerlink" href="#upgrade-guide" title="Permanent link">&para;</a></h3>
+<p>Update all import statements in your code:</p>
+<pre><code class="language-bash"># Using sed (macOS)
+find . -name &quot;*.go&quot; -exec sed -i '' 's|github.com/agentplexus/go-opik|github.com/plexusone/opik-go|g' {} +
 
-fmt.Printf(&quot;URL: %s\n&quot;, cfg.URL)
-fmt.Printf(&quot;Workspace: %s\n&quot;, cfg.Workspace)
-fmt.Printf(&quot;Project: %s\n&quot;, cfg.ProjectName)
+# Using sed (Linux)
+find . -name &quot;*.go&quot; -exec sed -i 's|github.com/agentplexus/go-opik|github.com/plexusone/opik-go|g' {} +
 </code></pre>
+<p>Then update your dependencies:</p>
+<pre><code class="language-bash">go get github.com/plexusone/opik-go@v0.6.0
+go mod tidy
+</code></pre>
+<h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Upgraded <code>github.com/plexusone/omnillm</code> from v0.12.0 to v0.13.0</li>
+<li>Upgraded <code>github.com/plexusone/omniobserve</code> from v0.5.1 to v0.7.0</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../testing/" class="btn btn-neutral float-right" title="Testing">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../tutorials/agentic-observability/" class="btn btn-neutral float-left" title="Agentic Observability"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../v0.5.0/" class="btn btn-neutral float-right" title="v0.5.0">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -313,10 +228,10 @@ fmt.Printf(&quot;Project: %s\n&quot;, cfg.ProjectName)
         </span>
     
     
-      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../tutorials/agentic-observability/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../testing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../v0.5.0/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
